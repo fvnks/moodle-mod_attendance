@@ -24,9 +24,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version = 2023110402;  // YYYYMMDDXX (year, month, day, 24-hour time)
+$plugin->version = 2023110403;  // YYYYMMDDXX (year, month, day, 24-hour time)
 $plugin->requires = 2022112800; // Moodle 4.1 requirement
 $plugin->component = 'mod_attendance';
 $plugin->maturity = MATURITY_ALPHA;
-$plugin->release = '0.1.5';
+$plugin->release = '0.1.6';
 $plugin->supported_languages = array('en', 'es_cl'); // Idiomas soportados 

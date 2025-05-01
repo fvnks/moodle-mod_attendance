@@ -49,8 +49,7 @@ Si deseas contribuir a este proyecto, puedes:
 
 Para más información o soporte, puedes contactarnos a través de:
 - Issues en este repositorio
-- [Sitio web del desarrollador]
 
 ---
 
-Desarrollado originalmente para instituciones educativas chilenas © 2023 
+Desarrollado originalmente para instituciones educativas chilenas por Rodrigo Droguett Stahr © 2025

@@ -1,0 +1,28 @@
+# Archivos de configuración locales
+config.php
+config-dist.php
+
+# Archivos temporales
+*.tmp
+*.temp
+*.swp
+*~
+
+# Archivos de caché
+*.cache
+
+# Directorios generados por IDEs/Editores
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Archivos específicos de Moodle que no deberían compartirse
+moodledata/
+config.php
+upgrade.log
+
+# Carpetas de logs y backups
+logs/
+backup/
+*.bak 

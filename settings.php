@@ -187,11 +187,11 @@ if ($ADMIN->fulltree) {
     ));
     
     // Botón para comprobar actualizaciones ahora
-    $checkupdateurl = new moodle_url('/mod/attendance/check_updates.php');
+    $checkupdateurl = new moodle_url('/mod/attendance/check_updates.php', array('sesskey' => sesskey()));
     $checkupdatebutton = html_writer::link(
         $checkupdateurl,
         get_string('checkupdatesnow', 'mod_attendance'),
-        ['class' => 'btn btn-secondary', 'target' => '_blank']
+        ['class' => 'btn btn-secondary']
     );
     
     $settings->add(new admin_setting_heading(

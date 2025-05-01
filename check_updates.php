@@ -22,16 +22,17 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-// Asegurarse de incluir la configuración global de Moodle
-require_once(__DIR__ . '/../../config.php');
-require_once($CFG->libdir.'/adminlib.php');
+// Incluir la configuración principal de Moodle
+require_once(dirname(dirname(dirname(__FILE__))) . '/config.php');
+require_once($CFG->libdir . '/adminlib.php');
 
-// Verificar permisos
+// Verificar permisos y sesskey
 require_login();
+require_sesskey();
 $context = context_system::instance();
 require_capability('moodle/site:config', $context);
 
-// Configuración de la página
+// Configuración de la página de administración
 admin_externalpage_setup('modsettingattendance');
 
 // Obtener la configuración del repositorio
@@ -72,7 +73,7 @@ if ($updateinfo) {
     
     // Mostrar notas de la versión si están disponibles
     if (!empty($updateinfo->release_notes)) {
-        echo $OUTPUT->heading(get_string('releasenotes', 'core_admin'), 3);
+        echo $OUTPUT->heading(get_string('releasenotes', 'mod_attendance'), 3);
         echo html_writer::tag('div', format_text($updateinfo->release_notes, FORMAT_MARKDOWN), ['class' => 'release-notes']);
     }
     
@@ -80,7 +81,7 @@ if ($updateinfo) {
     echo html_writer::div(
         html_writer::link(
             $updateinfo->download_url,
-            get_string('downloadupdate', 'core_admin'),
+            get_string('downloadupdate', 'mod_attendance'),
             ['class' => 'btn btn-primary', 'target' => '_blank']
         ),
         'mt-3'

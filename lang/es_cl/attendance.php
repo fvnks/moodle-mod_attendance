@@ -178,4 +178,6 @@ $string['noupdatesavailable'] = 'Ya estás utilizando la última versión del pl
 $string['updatecheckerror'] = 'No se pudo comprobar si hay actualizaciones disponibles. Verifica la configuración del repositorio.';
 $string['issuetracker'] = 'Reportar un problema';
 $string['issuetracker_desc'] = 'Si encuentras un problema con el plugin, puedes reportarlo en el seguimiento de problemas de GitHub.';
-$string['reportissue'] = 'Reportar un problema en GitHub'; 
+$string['reportissue'] = 'Reportar un problema en GitHub';
+$string['downloadupdate'] = 'Descargar actualización';
+$string['releasenotes'] = 'Notas de la versión'; 

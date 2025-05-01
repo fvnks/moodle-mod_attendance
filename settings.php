@@ -34,7 +34,7 @@ if ($ADMIN->fulltree) {
     
     // Porcentaje mínimo de asistencia requerido (relevante para Chile)
     $settings->add(new admin_setting_configtext(
-        'mod_attendance/mínimoportajeasis',
+        'mod_attendance/minimaporcentajeasis',
         get_string('minimumattendance', 'mod_attendance'),
         get_string('minimumattendance_desc', 'mod_attendance'),
         '85', // Valor predeterminado común en Chile
